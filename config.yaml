@@ -1,0 +1,24 @@
+# Market regime project config. Edit here, not in the code.
+
+start_date: "2008-01-01"   # includes the 2008 crisis; India VIX history on Yahoo may start later
+end_date: null             # null = up to today
+auto_adjust: true
+ffill_limit: 3             # forward-fill gaps of at most this many trading days
+
+# The merged dataset is aligned to this ticker's trading dates
+base_ticker: nifty50
+
+# name: Yahoo Finance symbol. Verify each one returns data before relying on it.
+tickers:
+  nifty50: "^NSEI"
+  banknifty: "^NSEBANK"
+  india_vix: "^INDIAVIX"
+  usdinr: "INR=X"
+  gold: "GC=F"
+  crude: "CL=F"
+  sp500: "^GSPC"
+  us10y: "^TNX"
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"

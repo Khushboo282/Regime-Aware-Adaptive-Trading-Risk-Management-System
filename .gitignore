@@ -1,0 +1,22 @@
+# Data (re-created by src/data.py)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.zip
+
+# Saved models
+models/*
+!models/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
