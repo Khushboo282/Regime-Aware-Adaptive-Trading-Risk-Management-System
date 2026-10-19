@@ -87,8 +87,8 @@ The project is split into two sub-systems that meet at the backtest:
 
 | Sub-system | Purpose | Owner |
 |---|---|---|
-| **Risk overlay** (quant analyst track) | Rolling VaR per regime, regime-conditional position sizing and risk limits | Pujita |
-| **Trading signal** (quant trading track) | Technical feature engineering, buy/hold/sell model, backtesting | [Partner's name] |
+| **Risk overlay** | Rolling VaR per regime, regime-conditional position sizing and risk limits | Pujita |
+| **Trading signal** | Technical feature engineering, buy/hold/sell model, backtesting | Khushboo |
 | **Regime detection core** | Clustering, PCA, classification, integration, deployment | Shared |
 
 ## 6. Data Sources
