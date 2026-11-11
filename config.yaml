@@ -1,24 +1,67 @@
-# Market regime project config. Edit here, not in the code.
+# India-focused market regime project
+# Every series is aligned to the anchor's trading calendar (Nifty 50).
 
-start_date: "2008-01-01"   # includes the 2008 crisis; India VIX history on Yahoo may start later
-end_date: null             # null = up to today
+start_date: "2008-01-01"     # includes the January 2008 peak and the whole 2008 crisis
+end_date: null               # null = today
 auto_adjust: true
-ffill_limit: 3             # forward-fill gaps of at most this many trading days
-
-# The merged dataset is aligned to this ticker's trading dates
-base_ticker: nifty50
-
-# name: Yahoo Finance symbol. Verify each one returns data before relying on it.
-tickers:
-  nifty50: "^NSEI"
-  banknifty: "^NSEBANK"
-  india_vix: "^INDIAVIX"
-  usdinr: "INR=X"
-  gold: "GC=F"
-  crude: "CL=F"
-  sp500: "^GSPC"
-  us10y: "^TNX"
+anchor: nifty50              # trading calendar for the merged datasets
+ffill_limit: 3               # fill gaps of at most 3 days (holiday mismatches) when merging
+exclude_today: true          # drop today's row: a daily candle pulled during market hours is incomplete
+required: [nifty50, india_vix]   # the pipeline stops if these fail; others are skipped with a warning
 
 paths:
-  raw_dir: "data/raw"
-  processed_dir: "data/processed"
+  raw_dir: data/raw              # untouched downloads, one file per ticker
+  interim_dir: data/interim      # merged and aligned, NOT cleaned yet
+  processed_dir: data/processed  # cleaned data, returns, features
+
+# --- Core Indian market series (full history from 2008) --------------------------
+indian_market:
+  nifty50: "^NSEI"
+  sensex: "^BSESN"
+  banknifty: "^NSEBANK"
+  nifty_it: "^CNXIT"
+
+# --- Indian risk and currency -----------------------------------------------------
+indian_risk_macro:
+  india_vix: "^INDIAVIX"         # starts around March 2008 on Yahoo
+  usdinr: "INR=X"
+
+# --- Global drivers of Indian markets (US-session series: shift 1 day when modelling) ---
+global_drivers:
+  brent: "BZ=F"                  # India imports most of its oil, priced off Brent
+  gold: "GC=F"
+  sp500: "^GSPC"
+  us10y: "^TNX"
+  dxy: "DX-Y.NYB"
+
+# --- Sector indices: Yahoo history only starts mid-2010 to mid-2011 -----------------
+# Kept OUT of the core dataset (they would remove the 2008 crisis). Saved separately as
+# sectors_close.csv for optional breadth features on the post-2011 sample.
+sectors:
+  nifty_realty: "^CNXREALTY"
+  nifty_fmcg: "^CNXFMCG"
+  nifty_pharma: "^CNXPHARMA"
+  nifty_energy: "^CNXENERGY"
+  nifty_auto: "^CNXAUTO"
+  nifty_metal: "^CNXMETAL"
+
+# --- Large-cap stock basket for the risk part (position sizing and VaR) ------------
+# Today's large caps, so results carry survivorship bias. State this in the report.
+stocks:
+  reliance: "RELIANCE.NS"
+  hdfcbank: "HDFCBANK.NS"
+  icicibank: "ICICIBANK.NS"
+  infy: "INFY.NS"
+  tcs: "TCS.NS"
+  itc: "ITC.NS"
+  lt: "LT.NS"
+  sbin: "SBIN.NS"
+  bhartiartl: "BHARTIARTL.NS"
+  hindunilvr: "HINDUNILVR.NS"
+  kotakbank: "KOTAKBANK.NS"
+  axisbank: "AXISBANK.NS"
+  maruti: "MARUTI.NS"
+  sunpharma: "SUNPHARMA.NS"
+  mahindra: "M&M.NS"
+
+random_seed: 42
