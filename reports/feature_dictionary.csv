@@ -1,0 +1,22 @@
+feature,group,description
+nifty_ret_1d,indian,Nifty 1-day log return
+nifty_ret_5d,indian,Nifty 5-day log return
+nifty_ret_21d,indian,Nifty 21-day log return
+nifty_vol_10d,indian,"Nifty 10-day realised volatility, annualised"
+nifty_vol_21d,indian,"Nifty 21-day realised volatility, annualised"
+nifty_vol_63d,indian,"Nifty 63-day realised volatility, annualised"
+nifty_drawdown,indian,Distance below the all-time high (peak taken from Jan 2008)
+nifty_ma_gap_21d,indian,Log distance of Nifty from its 21-day average
+nifty_ma_gap_63d,indian,Log distance of Nifty from its 63-day average
+nifty_skew_63d,indian,Skewness of Nifty daily returns over 63 days
+nifty_kurt_63d,indian,Excess kurtosis of Nifty daily returns over 63 days
+vix_level,indian,India VIX level
+vix_chg_5d,indian,5-day log change in India VIX
+banknifty_rel_21d,indian,Bank Nifty minus Nifty 21-day log return
+stock_corr_21d,indian,"Average pairwise correlation of 15 large-cap stocks, 21 days"
+usdinr_ret_21d,global_shifted,USD/INR 21-day log return (shifted 1 day)
+brent_ret_21d,global_shifted,Brent 21-day log return (shifted 1 day)
+gold_ret_21d,global_shifted,Gold 21-day log return (shifted 1 day)
+sp500_ret_21d,global_shifted,S&P 500 21-day log return (shifted 1 day)
+us10y_level,global_shifted,"US 10-year yield level, percent (shifted 1 day)"
+repo_change_63d,macro,"Change in RBI repo rate over 63 trading days, percentage points (not shifted)"
