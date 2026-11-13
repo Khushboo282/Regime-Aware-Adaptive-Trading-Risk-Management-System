@@ -1,0 +1,4 @@
+date,column,problem,bad_value
+2012-01-27,usdinr,FX tick >3% from 5-day median,52.49300003051758
+2012-01-31,usdinr,FX tick >3% from 5-day median,52.49300003051758
+2013-09-04,usdinr,FX tick >3% from 5-day median,68.61000061035156

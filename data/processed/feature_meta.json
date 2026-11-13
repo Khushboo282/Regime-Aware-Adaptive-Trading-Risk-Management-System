@@ -1,0 +1,31 @@
+{
+  "train_end": "2017-12-31",
+  "indian_features": [
+    "nifty_ret_1d",
+    "nifty_ret_5d",
+    "nifty_ret_21d",
+    "nifty_vol_10d",
+    "nifty_vol_21d",
+    "nifty_vol_63d",
+    "nifty_drawdown",
+    "nifty_ma_gap_21d",
+    "nifty_ma_gap_63d",
+    "nifty_skew_63d",
+    "nifty_kurt_63d",
+    "vix_level",
+    "vix_chg_5d",
+    "banknifty_rel_21d",
+    "stock_corr_21d"
+  ],
+  "global_features_shifted_1d": [
+    "usdinr_ret_21d",
+    "brent_ret_21d",
+    "gold_ret_21d",
+    "sp500_ret_21d",
+    "us10y_level"
+  ],
+  "macro_features": [
+    "repo_change_63d"
+  ],
+  "note_us10y_level": "us10y_level can act as a calendar; consider dropping it if classifiers overfit"
+}
