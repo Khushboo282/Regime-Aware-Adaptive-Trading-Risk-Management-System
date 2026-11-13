@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "train_end": "2017-12-31",
+  "n_components": 9,
+  "explained_variance": 0.8559490739780602,
+  "k": 3,
+  "feature_cols": [
+    "nifty_ret_1d",
+    "nifty_ret_5d",
+    "nifty_ret_21d",
+    "nifty_vol_10d",
+    "nifty_vol_21d",
+    "nifty_vol_63d",
+    "nifty_drawdown",
+    "nifty_ma_gap_21d",
+    "nifty_ma_gap_63d",
+    "nifty_skew_63d",
+    "nifty_kurt_63d",
+    "vix_level",
+    "vix_chg_5d",
+    "banknifty_rel_21d",
+    "stock_corr_21d",
+    "usdinr_ret_21d",
+    "brent_ret_21d",
+    "gold_ret_21d",
+    "sp500_ret_21d",
+    "us10y_level",
+    "repo_change_63d"
+  ],
+  "regime_names": {
+    "0": "Calm",
+    "1": "Stressed-Decline",
+    "2": "Stressed-Rebound"
+  },
+  "label_order": "0 = lowest mean India VIX in training",
+  "relabel_from_kmeans_raw": {
+    "2": 0,
+    "1": 1,
+    "0": 2
+  },
+  "timing_note": "regime at t is known at close of t; shift by one day before using in forecasts or exposure rules"
+}
