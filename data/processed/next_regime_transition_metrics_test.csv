@@ -1,0 +1,8 @@
+model,transition days,change recall (exact new regime),change flagged (any change),changes predicted,correct change calls,precision of change calls,false-alarm rate (stay days),AUC of P(change),average precision of P(change),transitions caught in top 5% of days,transitions caught in top 10% of days
+Persistence,39.0,0.0,0.0,0.0,0.0,,0.0,,,,
+Logistic Regression,39.0,0.0,0.0,0.0,0.0,,0.0,0.780706,0.113994,0.307692,0.410256
+kNN,39.0,0.051282,0.076923,3.0,2.0,0.666667,0.0,0.676952,0.151249,0.384615,0.487179
+SVM,39.0,0.051282,0.102564,98.0,2.0,0.020408,0.044049,0.860813,0.070097,0.102564,0.564103
+Random Forest,39.0,0.025641,0.025641,2.0,1.0,0.5,0.000469,0.927126,0.268325,0.641026,0.794872
+Voting (soft),39.0,0.0,0.0,0.0,0.0,,0.0,0.907625,0.121749,0.333333,0.564103
+Regime-only benchmark (training exit rates),39.0,,,,,,,0.766984,0.156785,0.564103,0.564103

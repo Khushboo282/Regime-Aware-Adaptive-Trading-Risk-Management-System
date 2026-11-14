@@ -1,0 +1,22 @@
+model,,pred Calm,pred Stressed-Decline,pred Stressed-Rebound
+Persistence,actual Calm,2066,14,3
+Persistence,actual Stressed-Decline,15,46,2
+Persistence,actual Stressed-Rebound,2,3,22
+Always Calm,actual Calm,2083,0,0
+Always Calm,actual Stressed-Decline,63,0,0
+Always Calm,actual Stressed-Rebound,27,0,0
+Logistic Regression,actual Calm,2066,14,3
+Logistic Regression,actual Stressed-Decline,15,46,2
+Logistic Regression,actual Stressed-Rebound,2,3,22
+kNN,actual Calm,2068,13,2
+kNN,actual Stressed-Decline,15,46,2
+kNN,actual Stressed-Rebound,2,3,22
+SVM,actual Calm,1972,108,3
+SVM,actual Stressed-Decline,13,48,2
+SVM,actual Stressed-Rebound,0,5,22
+Random Forest,actual Calm,2065,15,3
+Random Forest,actual Stressed-Decline,14,47,2
+Random Forest,actual Stressed-Rebound,2,3,22
+Voting (soft),actual Calm,2066,14,3
+Voting (soft),actual Stressed-Decline,15,46,2
+Voting (soft),actual Stressed-Rebound,2,3,22

@@ -1,0 +1,8 @@
+model,stressed precision,stressed recall,stressed F1,balanced accuracy,"stress-entry recall (calm today, stressed tomorrow)","stress-exit recall (stressed today, calm tomorrow)",AUC of P(stressed)
+Persistence,0.811111,0.811111,0.811111,0.901475,0.0,0.0,
+Always Calm,0.0,0.0,0.0,0.5,0.0,1.0,
+Logistic Regression,0.811111,0.811111,0.811111,0.901475,0.0,0.0,0.977042
+kNN,0.829545,0.811111,0.820225,0.901955,0.0,0.117647,0.911167
+SVM,0.409574,0.855556,0.553957,0.901134,0.235294,0.0,0.959375
+Random Forest,0.804348,0.822222,0.813187,0.90679,0.058824,0.0,0.978455
+Voting (soft),0.811111,0.811111,0.811111,0.901475,0.0,0.0,0.976855

@@ -1,0 +1,22 @@
+model,regime,precision,recall,f1,support
+Persistence,Calm,0.991839,0.991839,0.991839,2083
+Persistence,Stressed-Decline,0.730159,0.730159,0.730159,63
+Persistence,Stressed-Rebound,0.814815,0.814815,0.814815,27
+Always Calm,Calm,0.958583,1.0,0.978853,2083
+Always Calm,Stressed-Decline,0.0,0.0,0.0,63
+Always Calm,Stressed-Rebound,0.0,0.0,0.0,27
+Logistic Regression,Calm,0.991839,0.991839,0.991839,2083
+Logistic Regression,Stressed-Decline,0.730159,0.730159,0.730159,63
+Logistic Regression,Stressed-Rebound,0.814815,0.814815,0.814815,27
+kNN,Calm,0.991847,0.992799,0.992322,2083
+kNN,Stressed-Decline,0.741935,0.730159,0.736,63
+kNN,Stressed-Rebound,0.846154,0.814815,0.830189,27
+SVM,Calm,0.993451,0.946711,0.969518,2083
+SVM,Stressed-Decline,0.298137,0.761905,0.428571,63
+SVM,Stressed-Rebound,0.814815,0.814815,0.814815,27
+Random Forest,Calm,0.992311,0.991359,0.991835,2083
+Random Forest,Stressed-Decline,0.723077,0.746032,0.734375,63
+Random Forest,Stressed-Rebound,0.814815,0.814815,0.814815,27
+Voting (soft),Calm,0.991839,0.991839,0.991839,2083
+Voting (soft),Stressed-Decline,0.730159,0.730159,0.730159,63
+Voting (soft),Stressed-Rebound,0.814815,0.814815,0.814815,27

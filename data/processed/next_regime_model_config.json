@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "target": "regime at t+1 from features at close of t",
+  "feature_set": "B: PCA scores + current regime",
+  "input_columns": [
+    "pc1",
+    "pc2",
+    "pc3",
+    "pc4",
+    "pc5",
+    "pc6",
+    "pc7",
+    "pc8",
+    "pc9",
+    "cur_0",
+    "cur_1",
+    "cur_2"
+  ],
+  "classes": [
+    0,
+    1,
+    2
+  ],
+  "class_names": {
+    "0": "Calm",
+    "1": "Stressed-Decline",
+    "2": "Stressed-Rebound"
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 0.01,
+      "class_weight": "balanced"
+    },
+    "kNN": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "SVM": {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    "Random Forest": {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "class_weight": "balanced_subsample"
+    }
+  },
+  "ensemble_members": [
+    "Logistic Regression",
+    "kNN",
+    "SVM"
+  ],
+  "validation": "TimeSeriesSplit(8) expanding window, pooled out-of-fold macro-F1",
+  "train_rows": 2335,
+  "test_rows": 2173,
+  "train_target_dates": [
+    "2008-06-09",
+    "2017-12-29"
+  ],
+  "relabel_from_kmeans_raw": {
+    "2": 0,
+    "1": 1,
+    "0": 2
+  },
+  "timing_note": "forecast for t+1 is known at the close of t"
+}
