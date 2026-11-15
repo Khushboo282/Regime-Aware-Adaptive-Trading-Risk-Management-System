@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "signal_timing": "regime at close of d-1 sets exposure on day d",
+  "headline_cost_bps": 10,
+  "costs_bps": [
+    0,
+    10,
+    25
+  ],
+  "risk_free": "RBI repo rate (macro.csv risk_free_daily)",
+  "maps": {
+    "S1": {
+      "Calm": 1.0,
+      "Stressed-Rebound": 0.5,
+      "Stressed-Decline": 0.0
+    },
+    "S1b": {
+      "Calm": 1.0,
+      "Stressed-Rebound": 0.5,
+      "Stressed-Decline": 0.5
+    }
+  },
+  "var_training_95_next_day": {
+    "Calm": 0.01601385927908011,
+    "Stressed-Decline": 0.039487937629303506,
+    "Stressed-Rebound": 0.034391131616962264,
+    "unconditional": 0.020063888471771506
+  },
+  "vix_cut_offs": {
+    "cash_above": 35.38522483940042,
+    "half_between": [
+      29.53324625267666,
+      35.38522483940042
+    ]
+  },
+  "vol_target_annualised": 0.16263288157061984,
+  "bootstrap": {
+    "draws": 2000,
+    "block": 21
+  },
+  "success_criterion": "test, 10 bps: max drawdown >= 25% smaller than S0 and Sharpe-difference 95% CI not entirely below 0",
+  "criterion_result": {
+    "drawdown_reduction_pct": 41.93868975246274,
+    "sharpe_diff_ci": [
+      -0.3409996125781331,
+      0.3810658346934111
+    ],
+    "passed": true
+  }
+}

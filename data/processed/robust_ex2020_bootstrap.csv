@@ -1,0 +1,7 @@
+scenario,comparison,Sharpe difference,Sharpe 95% CI,CI excludes 0,Max-drawdown reduction % (point),Max-drawdown reduction % 95% CI
+"Test, all sessions",S1 minus S0,-0.015622,"[-0.34, +0.38]",False,41.93869,"[-25, 60]"
+"Test, all sessions",A minus S0,0.02465,"[-0.24, +0.29]",False,50.191655,"[-10, 50]"
+Test without 2020,S1 minus S0,-0.163038,"[-0.31, -0.04]",True,-29.535681,"[-39, 3]"
+Test without 2020,A minus S0,-0.012338,"[-0.04, +0.00]",False,-6.350488,"[-7, 0]"
+Test without 2020 and 2022,S1 minus S0,-0.120662,"[-0.26, +0.00]",False,-34.259566,"[-28, 0]"
+Test without 2020 and 2022,A minus S0,0.0,"[+0.00, +0.00]",False,0.0,"[0, 0]"

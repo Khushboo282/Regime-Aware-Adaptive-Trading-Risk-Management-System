@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "cost_bps": 10,
+  "filter_primary_N": 2,
+  "sensitivity_N": [
+    1,
+    2,
+    3
+  ],
+  "criterion": "test, 10 bps: position changes fall >= 30% vs unfiltered S1, Sharpe >= unfiltered S1, max drawdown >= 25% smaller than buy-and-hold",
+  "criterion_result": {
+    "changes_fall_pct": 51.28205128205128,
+    "sharpe_filtered": 0.32204951946218763,
+    "sharpe_unfiltered": 0.2745916561923771,
+    "drawdown_reduction_pct": 49.516843794989406,
+    "passed": true
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "block": 21
+  },
+  "note": "test period already used in Phase 9: robustness check, not a fresh confirmation"
+}

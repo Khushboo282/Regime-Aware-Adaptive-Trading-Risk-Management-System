@@ -1,0 +1,8 @@
+comparison,Sharpe difference,Sharpe 95% CI,interval excludes 0,Max-drawdown reduction % (point),Max-drawdown reduction % 95% CI
+S1 Regime 100/50/0  minus  S0 Buy-and-hold,-0.015621684487840126,"[-0.34, +0.38]",False,41.93868975246274,"[-25, 60]"
+S1b Regime 100/50/50  minus  S0 Buy-and-hold,-0.008392271034123933,"[-0.17, +0.17]",False,32.459699094355365,"[-10, 39]"
+S2 VaR-scaled  minus  S0 Buy-and-hold,-0.009554488048955367,"[-0.21, +0.21]",False,39.0358824710208,"[-12, 45]"
+A VIX rule 100/50/0  minus  S0 Buy-and-hold,0.02465034670901156,"[-0.24, +0.29]",False,50.19165467900449,"[-10, 50]"
+B Volatility targeting  minus  S0 Buy-and-hold,-0.08238127061987119,"[-0.27, +0.11]",False,35.25079420667421,"[-10, 41]"
+S1 Regime 100/50/0  minus  A VIX rule 100/50/0,-0.04027203119685169,"[-0.21, +0.16]",False,-16.569442075127338,"[-25, 31]"
+S1 Regime 100/50/0  minus  B Volatility targeting,0.06675958613203106,"[-0.14, +0.35]",False,10.328922901596293,"[-26, 42]"

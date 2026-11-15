@@ -1,0 +1,5 @@
+id,experiment,rule fixed in advance,result,verdict
+E1,Phase 9 baseline: S1 vs buy-and-hold,drawdown >= 25% smaller; Sharpe-difference CI not entirely below 0,drawdown 42% smaller; Sharpe 0.27 vs 0.29,"PASS (criterion met), but no Sharpe gain"
+E2,Test period without 2020 (and without 2020 and 2022),"diagnostic, no pass/fail",S1 Sharpe 0.10 vs S0 0.26; drawdown reduction -30%,see interpretation
+E3,Persistence filter N=2 on S1,changes -30% or more; Sharpe >= unfiltered S1; drawdown >= 25% smaller than S0,changes 39 -> 19; Sharpe 0.322 vs 0.275; drawdown -19.4%,PASS
+E4,Sensitivity N=3 and filtered VIX rule,"reported only, never used to pick N",S1 N=3 Sharpe 0.347; A N=2 Sharpe 0.353,information only

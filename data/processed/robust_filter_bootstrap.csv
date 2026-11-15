@@ -1,0 +1,7 @@
+comparison,Sharpe difference,Sharpe 95% CI,CI excludes 0,Max-drawdown reduction % (point),Max-drawdown reduction % 95% CI
+S1 N=2  minus  S0 Buy-and-hold,0.031836,"[-0.26, +0.35]",False,49.516844,"[-16, 55]"
+S1 N=2  minus  S1 N=1,0.047458,"[-0.11, +0.19]",False,13.051986,"[-29, 20]"
+S1 N=3  minus  S1 N=1,0.072712,"[-0.07, +0.21]",False,8.663734,"[-22, 21]"
+A N=2  minus  S0 Buy-and-hold,0.062536,"[-0.20, +0.35]",False,50.712073,"[-8, 53]"
+A N=2  minus  A N=1,0.037886,"[-0.01, +0.10]",False,1.044841,"[-4, 11]"
+S1 N=2  minus  A N=2,-0.0307,"[-0.15, +0.07]",False,-2.424994,"[-18, 13]"

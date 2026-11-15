@@ -1,0 +1,31 @@
+window,strategy,total return %,max drawdown in window %,average exposure
+2020 crash (20 Feb to 23 Mar),S0 Buy-and-hold,-37.239712,-37.239712,1.0
+2020 crash (20 Feb to 23 Mar),S1 Regime 100/50/0,-10.2364,-10.401038,0.428571
+2020 crash (20 Feb to 23 Mar),S1b Regime 100/50/50,-24.518998,-24.518998,0.714286
+2020 crash (20 Feb to 23 Mar),S2 VaR-scaled,-21.941841,-21.941841,0.660307
+2020 crash (20 Feb to 23 Mar),A VIX rule 100/50/0,-17.306571,-17.407715,0.619048
+2020 crash (20 Feb to 23 Mar),B Volatility targeting,-23.425189,-23.425189,0.703982
+2020 rebound (24 Mar to 30 Jun),S0 Buy-and-hold,35.371369,-10.513802,1.0
+2020 rebound (24 Mar to 30 Jun),S1 Regime 100/50/0,6.580377,-4.852641,0.438462
+2020 rebound (24 Mar to 30 Jun),S1b Regime 100/50/50,18.252309,-5.639989,0.615385
+2020 rebound (24 Mar to 30 Jun),S2 VaR-scaled,15.701965,-5.101403,0.567687
+2020 rebound (24 Mar to 30 Jun),A VIX rule 100/50/0,4.080864,-3.136817,0.269231
+2020 rebound (24 Mar to 30 Jun),B Volatility targeting,11.571075,-4.167634,0.433084
+2020 full calendar year,S0 Buy-and-hold,14.90165,-38.439852,1.0
+2020 full calendar year,S1 Regime 100/50/0,29.387414,-13.706068,0.806
+2020 full calendar year,S1b Regime 100/50/50,20.715156,-25.962392,0.876
+2020 full calendar year,S2 VaR-scaled,22.144397,-23.434517,0.859064
+2020 full calendar year,A VIX rule 100/50/0,16.400919,-19.146254,0.778
+2020 full calendar year,B Volatility targeting,12.972366,-24.889499,0.807487
+2022 H1 selloff (3 Jan to 17 Jun),S0 Buy-and-hold,-11.873601,-16.465934,1.0
+2022 H1 selloff (3 Jan to 17 Jun),S1 Regime 100/50/0,-17.291837,-21.601822,0.859649
+2022 H1 selloff (3 Jan to 17 Jun),S1b Regime 100/50/50,-14.590135,-19.040907,0.929825
+2022 H1 selloff (3 Jan to 17 Jun),S2 VaR-scaled,-15.101785,-19.525895,0.916567
+2022 H1 selloff (3 Jan to 17 Jun),A VIX rule 100/50/0,-13.03858,-17.570205,0.995614
+2022 H1 selloff (3 Jan to 17 Jun),B Volatility targeting,-12.193502,-16.685211,0.821547
+2022 full calendar year,S0 Buy-and-hold,4.32896,-16.465934,1.0
+2022 full calendar year,S1 Regime 100/50/0,-2.183003,-21.601822,0.935484
+2022 full calendar year,S1b Regime 100/50/50,1.062607,-19.040907,0.967742
+2022 full calendar year,S2 VaR-scaled,0.447729,-19.525895,0.961648
+2022 full calendar year,A VIX rule 100/50/0,2.949793,-17.570205,0.997984
+2022 full calendar year,B Volatility targeting,3.291303,-16.685211,0.906202

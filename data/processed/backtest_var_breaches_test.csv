@@ -1,0 +1,9 @@
+next-day regime = regime of previous close,VaR used,days,breaches,breach rate %,95% CI low %,95% CI high %
+Calm,regime-conditional VaR,2083,73,3.504561,2.756875,4.386478
+Calm,unconditional VaR,2083,39,1.8723,1.334691,2.550681
+Stressed-Decline,regime-conditional VaR,63,7,11.111111,4.585662,21.562425
+Stressed-Decline,unconditional VaR,63,15,23.809524,13.981165,36.211638
+Stressed-Rebound,regime-conditional VaR,27,1,3.703704,0.093726,18.970562
+Stressed-Rebound,unconditional VaR,27,1,3.703704,0.093726,18.970562
+All test days,regime-conditional VaR,2173,81,3.727566,2.971032,4.61192
+All test days,unconditional VaR,2173,55,2.531063,1.912304,3.281905

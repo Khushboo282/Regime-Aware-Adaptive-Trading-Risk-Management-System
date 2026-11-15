@@ -1,0 +1,19 @@
+risk-free,strategy,Sharpe,CAGR %,Max drawdown %
+repo rate (headline),S0 Buy-and-hold,0.290213,9.343704,-38.439852
+repo rate (headline),S1 Regime 100/50/0,0.274592,8.667049,-22.318682
+repo rate (headline),S1b Regime 100/50/50,0.281821,8.889685,-25.962392
+repo rate (headline),S2 VaR-scaled,0.280659,8.832454,-23.434517
+repo rate (headline),A VIX rule 100/50/0,0.314864,9.339346,-19.146254
+repo rate (headline),B Volatility targeting,0.207832,7.646009,-24.889499
+0%,S0 Buy-and-hold,0.614853,9.343704,-38.439852
+0%,S1 Regime 100/50/0,0.658676,8.489299,-22.527518
+0%,S1b Regime 100/50/50,0.650691,8.786416,-26.054312
+0%,S2 VaR-scaled,0.65534,8.713158,-23.547192
+0%,A VIX rule 100/50/0,0.692957,9.213482,-19.812176
+0%,B Volatility targeting,0.590652,7.333625,-24.98586
+flat 5%,S0 Buy-and-hold,0.318303,9.343704,-38.439852
+flat 5%,S1 Regime 100/50/0,0.309737,8.680409,-22.281099
+flat 5%,S1b Regime 100/50/50,0.314889,8.899073,-25.964911
+flat 5%,S2 VaR-scaled,0.314413,8.842964,-23.437605
+flat 5%,A VIX rule 100/50/0,0.349238,9.354234,-19.084605
+flat 5%,B Volatility targeting,0.243832,7.661034,-24.89214

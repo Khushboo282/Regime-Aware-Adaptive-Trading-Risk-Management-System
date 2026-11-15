@@ -1,0 +1,5 @@
+regime,"days (train, next-day)",mean next-day return %,next-day volatility % (daily),VaR 95% (next day) %,ES 95% (next day) %,"VaR 95% (same day, reference) %"
+Calm,1956,0.033589,0.986717,1.601386,2.185686,1.491076
+Stressed-Decline,244,0.036425,2.555439,3.948794,5.614582,4.157247
+Stressed-Rebound,135,0.241511,2.653997,3.439113,4.462208,2.858315
+All days (unconditional),2335,0.045907,1.381144,2.006389,3.115842,2.006389
