@@ -1,9 +1,15 @@
-yfinance
-pandas
-numpy
-pyyaml
-scikit-learn
-matplotlib
-seaborn
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5,<1.7
+imbalanced-learn>=0.12       # SMOTE and random oversampling (course unit: class imbalance)
+statsmodels>=0.14            # ADF stationarity test
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.4
+pyyaml>=6.0
 jupyter
-statsmodels
+nbconvert
+flask>=3.0
+gunicorn>=22.0              # production server for deployment (Linux)
+yfinance                    # only needed to re-download the raw data
