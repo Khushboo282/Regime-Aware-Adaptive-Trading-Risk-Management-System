@@ -9,7 +9,4 @@ seaborn>=0.13
 joblib>=1.4
 pyyaml>=6.0
 jupyter
-nbconvert
-flask>=3.0
-gunicorn>=22.0              # production server for deployment (Linux)
-yfinance                    # only needed to re-download the raw data
+statsmodels
