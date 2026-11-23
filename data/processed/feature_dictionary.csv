@@ -1,0 +1,22 @@
+feature,description,group
+nifty_ret_5d,Nifty 50 5-day log return,Indian market
+nifty_ret_21d,Nifty 50 21-day log return,Indian market
+nifty_vol_10d,"Nifty 50 10-day realised volatility, annualised",Indian market
+nifty_vol_21d,"Nifty 50 21-day realised volatility, annualised",Indian market
+nifty_vol_63d,"Nifty 50 63-day realised volatility, annualised",Indian market
+nifty_drawdown,Nifty 50 distance below its running peak,Indian market
+nifty_ma_gap_21d,log of Nifty 50 over its 21-day moving average,Indian market
+nifty_ma_gap_63d,log of Nifty 50 over its 63-day moving average,Indian market
+nifty_skew_63d,"Skewness of Nifty 50 daily returns, 63 days",Indian market
+nifty_kurt_63d,"Excess kurtosis of Nifty 50 daily returns, 63 days",Indian market
+vix_level,India VIX level,Indian market
+vix_chg_5d,India VIX 5-day log change,Indian market
+banknifty_rel_21d,"Bank Nifty minus Nifty 50, 21-day log return",Indian market
+stock_corr_63d,"Average pairwise correlation of the 15 large stocks, 63 days",Indian market
+usdinr_ret_21d,USD/INR 21-day log return (shifted 1 day),global (shifted 1 day)
+dxy_ret_21d,Dollar index 21-day log return (shifted 1 day),global (shifted 1 day)
+brent_ret_21d,Brent crude 21-day log return (shifted 1 day),global (shifted 1 day)
+gold_ret_21d,Gold 21-day log return (shifted 1 day),global (shifted 1 day)
+sp500_ret_21d,S&P 500 21-day log return (shifted 1 day),global (shifted 1 day)
+us10y_chg_21d,"Change in the US 10-year yield over 21 days, percentage points (shifted 1 day)",global (shifted 1 day)
+repo_change_63d,"Change in the RBI repo rate over 63 trading days, percentage points",macro (RBI)

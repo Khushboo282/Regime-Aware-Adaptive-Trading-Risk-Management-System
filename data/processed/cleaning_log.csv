@@ -1,4 +1,27 @@
-date,column,problem,bad_value
-2012-01-27,usdinr,FX tick >3% from 5-day median,52.49300003051758
-2012-01-31,usdinr,FX tick >3% from 5-day median,52.49300003051758
-2013-09-04,usdinr,FX tick >3% from 5-day median,68.61000061035156
+Date,series,problem,old value,new value
+2009-04-20,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-21,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-22,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-23,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-24,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-27,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-28,brent,missing in source (gap > 3 days),,52.13999938964844
+2009-04-29,brent,missing in source (gap > 3 days),,52.13999938964844
+2008-08-06,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-07,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-08,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-11,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-12,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-13,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-14,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-18,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-19,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-20,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-21,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-22,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2008-08-25,usdinr,missing in source (gap > 3 days),,42.43399810791016
+2012-01-27,usdinr,glitch tick (spike that reverses),52.49300003051758,50.0
+2012-01-31,usdinr,glitch tick (spike that reverses),52.49300003051758,49.38800048828125
+2013-09-04,usdinr,glitch tick (spike that reverses),68.61000061035156,66.51000213623047
+2023-11-02,usdinr,glitch tick (spike that reverses),85.19400024414062,83.2771987915039
+2023-12-29,usdinr,glitch tick (spike that reverses),82.302001953125,83.26719665527344
